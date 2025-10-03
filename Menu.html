@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Raccon Coffe</title>
+    <style>
+    body{
+        background-color: blanchedalmond;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        color: black;
+        font-size: x-large;
+    }
+    p{
+        font-style: italic;
+    }
+  </style>
+    <h1>Welcome to Raccon Caffe</h1>
+    <img id="header-img" width="400" src="Resources/Fondo.png">
+    <nav>
+        <ul>
+            <li><a href="#menu-section">Menu</a></li>
+            <br>
+            <li><a href="#order-section">Order</a></li>
+        </ul>
+  </nav>
+</head>
+<body>
+         <main>
+            <section id="menu-section">
+                <h2>Menu</h2>
+                <main>
+                    <article>
+                    <img width="400" src="Resources/ColdBrew.jpg">
+                    <h3>Cold Brew</h3>
+                    <p> A coffee made by steeping coarse-ground coffee in cold or room-temperature
+                        water for an extended period up to 24 hours. Price: 3$</p>
+                </article>
+                <article>
+                    <img width="400" src="Resources/Matcha.jpg">
+                    <h3>Matcha</h3>
+                    <p>A powdered green tea made from whole, shade-grown tea leaves
+                        (Camellia sinensis) that are ground into a fine powder after being steamed and dried.
+                        Price: 5$</p>
+                </article>
+                <article>
+                    <img width="400" src="Resources/Cheesecake.jpg">
+                    <h3>Cheesecake</h3>
+                    <p> A creamy, sweet dessert consisting of a filling made primarily of soft,
+                        fresh cheese, eggs, and sugar, served over a crust. Price: 3$(slice) </p>
+                </article>
+            </main>
+            </section>
+            <section id="order-section">
+                <h2>Place Your Order</h2>
+                <form>
+                    <label>What is your order?</label><br><br>
+                    <label>Cold Brew:</label><input type="number" min="0" max="10" required/>
+                    <br>
+                    <label>Extras:</label><br>
+                    <input type="radio" name="extra-coldbrew" /> Pinaple Juice<br>
+                    <input type="radio" name="extra-coldbrew" /> Vainilla Flavor<br>
+                    <input type="radio" name="extra-coldbrew" /> Mint Shot<br>
+                    <label>Especial Request</label><br>
+                    <textarea maxlength="250"></textarea>
+                    <br><br>
+                    <label>Matcha:</label><input type="number" min="0" max="10" required/>
+                    <br>
+                    <label>Extras:</label><br>
+                    <input type="radio" name="extra-matcha" /> Oat Milk<br>
+                    <input type="radio" name="extra-matcha" /> Vainilla Flavor<br>
+                    <input type="radio" name="extra-matcha" /> Cream<br>
+                    <label>Especial Request</label><br>
+                    <textarea maxlength="250"></textarea>
+                    <br><br>
+                    <label>Cheesecake Slices:</label><input type="number" min="0" max="10" required/>
+                    <br>
+                    <label>Flavor:</label><br>
+                    <input type="radio" name="flavor-cheesecake" /> Lemon<br>
+                    <input type="radio" name="flavor-cheesecake" /> Blueberries<br>
+                    <input type="radio" name="flavor-cheesecake" /> Chocolate<br>
+                    <label>Especial Request</label><br>
+                    <textarea maxlength="250"></textarea>
+                    <br>
+                    <input type="submit" value="Go To Checkout"/>
+                </form>
+            </section>
+         </main>
+         <footer>
+        <p>Made with love by @MrAssasin07</p>
+        <img width="100" src="Resources/Logo.jpeg">
+    </footer>
+</body>
+</html>
